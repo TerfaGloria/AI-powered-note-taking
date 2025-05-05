@@ -1,0 +1,48 @@
+.btn{
+ 
+ border-radius: var( --round-border);
+ margin: .4rem;
+ cursor: pointer;
+
+
+ 
+&--login{
+    font-family: 'Poppins';
+    font-size: 17px;
+    color: var(--color-white);
+    width: 120px;
+    height: 60;
+    padding-top: 14px;
+    padding-right: 32px;
+    padding-bottom: 14px;
+    padding-left: 32px;
+    background-color: var(--color-black);
+    border: 1px solid var(--color-white);
+ box-shadow: 0px 0px 10px 0px #44E5E74D;
+ cursor: pointer;
+
+ 
+}
+
+&--primary{
+font-family: 'Poppins';
+width: 166px;
+font-size: 20px;
+ height: 60;
+gap: 10px;
+padding-top: 18px;
+padding-right: 32px;
+padding-bottom: 18px;
+padding-left: 32px;
+border-radius:var(--round-border);
+background-color: var( --color-secondary);
+box-shadow: 0px 0px 25px 0px #44E5E74D;
+border: none;
+cursor: pointer;
+
+
+
+}
+
+
+}

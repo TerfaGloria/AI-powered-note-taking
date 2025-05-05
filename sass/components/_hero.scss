@@ -1,0 +1,109 @@
+.hero{
+    display: flex;
+    align-items: center;
+    position: relative;
+    // align-content: center;
+    align-items: center;
+
+
+
+   &__text{
+ 
+  margin-top: 10rem;
+  padding: 9.5rem;
+
+
+  h4{
+    width: 50rem;
+  height: 8rem;
+  font-family: Poppins;
+  font-weight: 300;
+  font-size: 20px;
+  line-height:3rem;
+  letter-spacing: 0%;
+  color: #C7F7F8;
+  margin-bottom:0;
+  
+  
+
+
+   
+
+  }
+   }
+   &__note{
+    flex:0 0 40%;
+    text-transform:uppercase;
+    font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 3.5rem;
+  line-height: 60px;
+  letter-spacing: -5%;
+  width: 450px;
+  height: 218px;
+
+   }
+   
+    &__img{
+        flex:0 0 85%;
+        position: absolute;
+        top:40%;
+        left:60%;
+        transform: translate(-50%, -50%);
+        width: 520px;
+        height: 478px;
+       
+    }
+&--btn{
+    margin-top: 2rem;
+    font-size: 15px;
+}
+
+&__recommend{
+  display: flex;
+  align-items: center;
+  margin-left:9.5rem;
+}
+&__recommend-friends{
+ 
+
+
+
+img{
+  width: 20rem;
+ flex: 0 0 20%;
+ border:1px solid var(--color-white);
+ box-sizing: content-box;
+height: 4rem;
+width: 4rem;
+border-radius: 50%;
+
+
+
+&:not(:last-child){
+margin-right: -2rem;
+}
+
+}
+}
+
+&__recommend-text{
+
+font-family: Poppins;
+font-weight: 700;
+font-size: 1.30rem;
+line-height: 2rem;
+letter-spacing: -5%;
+margin-left: .4rem;
+
+
+span{
+  color: var(--color-secondary);
+}
+}
+
+
+ 
+
+}
+
