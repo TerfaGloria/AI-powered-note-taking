@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     position: relative;
-    // align-content: center;
     align-items: center;
 
 
@@ -11,19 +10,20 @@
  
   margin-top: 10rem;
   padding: 9.5rem;
-
+    line-height: .0.2rem;
 
   h4{
     width: 50rem;
   height: 8rem;
-  font-family: Poppins;
+  font-family:' Poppins', sans-serif;
   font-weight: 300;
   font-size: 20px;
-  line-height:3rem;
+  line-height:3.2rem;
   letter-spacing: 0%;
-  color: #C7F7F8;
+  color:var( --color-secondary-light);
   margin-bottom:0;
-  
+ 
+
   
 
 

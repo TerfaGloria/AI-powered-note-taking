@@ -1,0 +1,237 @@
+.FQA__heading {
+    
+      .FQA__primary {
+        .FQA__primary-text {
+
+           align-self: center;
+        h1{
+            width: 90rem;
+            height: 10rem;
+            font-family:' Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 60px;
+            line-height: 72px;
+            letter-spacing: -5%;
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        p{
+            width:63rem;
+           height: 7rem;
+           font-family:' Poppins', sans-serif;
+        font-size: 1.80rem;
+        line-height: 3.3rem;
+         letter-spacing: 0%;
+         text-align: center;
+         color: var(--color-secondary-light);
+         margin-left: 15rem;
+
+          
+        }
+        span{
+            border-bottom: 0.2px solid var(--color-secondary-light);
+        }
+        }
+  
+        .FQA__primary-buttons {
+         margin-left: 17rem;
+         margin-top: 3rem;
+
+         button.btn {
+            width: 14rem;
+             height: 32;
+   
+            height: 7rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 32px;
+            text-transform: capitalize;
+            letter-spacing: 0%;
+            
+
+            &:not(:first-child){
+                box-shadow: none;
+                background-color: transparent;
+            }
+          }
+          
+        
+    }
+
+
+        
+     
+      }
+  
+      .FQA__secondary {
+        padding: 10rem;
+
+
+        .FQA__secondary--question-1{
+
+            .FQA__secondary--question{
+                &-sub {
+                 
+                  align-items: center;
+                  display: flex;
+                
+ 
+
+    
+                  h4{
+                    width: 20rem;
+                     height: 2.80rem;
+                     font-family: 'Poppins', sans-serif;
+                     font-weight: 500;
+                     font-size: 2.5rem;
+                     line-height: 3rem;
+                    letter-spacing: -2.5%;
+                    padding-left: var( --pad-left);
+                    flex:0 0 65% ;
+                
+      
+                    }
+
+                  
+                 }
+                
+                
+                }
+               
+               p{
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 300;
+                    font-size: 1.50rem;
+                    line-height:2.5rem;
+                    letter-spacing: 0%;
+                    width: 48rem;
+                    height: 5rem;
+                    margin: 2rem ;
+                    padding-left: 7rem;
+                    color: var(--color-secondary-light);
+
+                    
+                }
+                
+               
+                
+        }
+        .FQA__secondary--question-2{
+          display: flex;
+          align-items: center;
+          margin-top: 3.5rem;
+          
+
+          h4{
+            font-family: 'Poppins', sans-serif;
+           font-weight: 500px;
+          font-size: 20px;
+          line-height: 40px;
+         letter-spacing: -2.5%;
+         height: 40px;
+         padding-left:var( --pad-left);
+         
+         
+
+
+          }
+
+          .arrow-down{
+            img{
+              margin-left: 7rem;
+            }
+          }
+         
+
+        }
+
+        .FQA__secondary--question-3{
+          display: flex;
+          align-items: center;
+          margin-top: 3.5rem;
+          
+
+          h4{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500px;
+           font-size: 20px;
+           line-height: 40px;
+          letter-spacing: -2.5%;
+          height: 40px;
+          padding-left:var( --pad-left);
+          
+          }
+
+          .arrow-down{
+            img{
+              margin-left: 12.4rem;
+            }
+          }
+        }
+        
+       
+        .FQA__secondary--question-4{
+          display: flex;
+          align-items: center;
+          margin-top: 3.5rem;
+
+
+          h4{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500px;
+           font-size: 20px;
+           line-height: 40px;
+          letter-spacing: -2.5%;
+          height: 40px;
+          padding-left:var( --pad-left);
+          
+          }
+
+          .arrow-down{
+            img{
+              margin-left: 14.7rem;
+            }
+          }
+
+        }
+        
+        .FQA__secondary--question-5 {
+
+          display: flex;
+          align-items: center;
+          margin-top: 3.5rem;
+
+
+          h4{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500px;
+           font-size: 20px;
+           line-height: 40px;
+          letter-spacing: -2.5%;
+          height: 40px;
+          padding-left:var( --pad-left);
+          
+          }
+
+          .arrow-down{
+            img{
+              margin-left: 22.5rem;
+            }
+          }
+        
+        }
+      
+       
+       
+    
+      }
+    }
+
+    
+  
+  
+ 
+  
+  
