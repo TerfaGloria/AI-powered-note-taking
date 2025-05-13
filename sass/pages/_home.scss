@@ -1,8 +1,10 @@
-
+.main{
+  margin-bottom: o;
+}
 .logo-section {
     background: linear-gradient(180deg, #0E2E2E 0%, #061212 100%);
     height: 27.6rem;
-    padding: 10rem;
+    padding: 4rem;
   
     .logo__text {
       p {
@@ -13,6 +15,7 @@
         letter-spacing: 0%;
         text-align: center;
         text-transform: capitalize;
+        
       }
   
       span {
@@ -28,12 +31,12 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(2, auto);
-      gap: 60px;
+      gap: 40px;
       justify-items: center;
-      margin-top: 10rem;
+      margin-top: 5rem;
   
       img {
-        width: 50%;
+        width: 40%;
         height: auto;
       
 
@@ -43,7 +46,7 @@
 
   .feature-section{
     background-color: #061212;
-    padding: 10rem;
+    padding: 9.5rem;
     
 
  
@@ -51,7 +54,8 @@
 
   .FQA-section{
     background: linear-gradient(180deg, #061212 0%, #0E2E2E 100%);
-    padding: 15rem;
+    padding:10rem 0 0 12rem;
+    
 
   }
 
@@ -62,7 +66,8 @@
 }
 
 .footer{
-  background: linear-gradient(360deg, #0E2E2E 0%, #061212 100%);
+  background:transparent;
+  margin-top: -180rem;
  
 }
 

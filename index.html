@@ -12,25 +12,35 @@
   </head>
   <body>
     <header class="header">
+ 
       <nav class="header__nav">
-        <h1 class="header__logo">
-          <a href="/">
-            <img src="./img/Logo.png" alt="Logo" />
-          </a>
-        </h1>
-        <ul class="header__nav-list">
-          <li class="header__list-item"><a href="#">Home</a></li>
-          <li class="header__list-item"><a href="#">Pricing</a></li>
-          <li class="header__list-item"><a href="#">About</a></li>
-          <li class="header__list-item"><a href="#">Community</a></li>
-        </ul>
-        <div class="header__actions">
-          <button class="btn btn--login">Login</button>
-          <button class="btn btn--primary">Get started</button>
-        </div>
-      </nav>
+  <h1 class="header__logo">
+    <a href="/">
+      <img src="./img/Logo.png" alt="Logo" />
+    </a>
+  </h1>
+  <input type="checkbox" id="menu-toggle" class="header__nav-toggle">
+  <label for="menu-toggle" class="header__nav-menu-label">
+  <img src="./img/Menu.png" alt="menu" class="header__nav-menu" />
+  <img src="./img/close.png" alt="close" class="header__nav-menu-close" />
+</label>
+<div class="sidebar-overlay"></div>
 
-      <div class="Hero">
+  <div class="sidebar">
+    <ul class="header__nav-list">
+      <li class="header__list-item"><a href="#">Home</a></li>
+      <li class="header__list-item"><a href="#">Pricing</a></li>
+      <li class="header__list-item"><a href="#">About</a></li>
+      <li class="header__list-item"><a href="#">Community</a></li>
+      <li class="header__list-item"><a href="#popup" class="login">Login</a></li>
+      <li class="header__list-item"> 
+        <button class="btn btn--primary">Get started</button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="Hero">
         <div class="hero__text">
           <h1 class="hero__note">
             ai-powered notes. organize and summarize in seconds
@@ -201,7 +211,8 @@
           </div>
           <div class="testimonials__secondary">
             <div class="testimonials__author">
-              <div class="testimonials__author-1">
+             <div>
+              <div class="testimonials__author-1 testimonials__author-first">
                 <div class="testimonials__rating">
                   <img src="./img/Stars-1.png" alt="" />
                   <p>
@@ -211,7 +222,7 @@
                     possimus
                   </p>
                 </div>
-                <div class="testimonials__author-sub">
+                <div class="testimonials__author-sub  testimonials__author-img">
                   <img
                     src="./img/user-1.png"
                     alt=""
@@ -220,7 +231,7 @@
                   <div>
                     <h3 class="testimonials__author-name">emily thompson</h3>
                     <p class="testimonials__author-position">
-                      senior marketing manager
+                       product designer
                     </p>
                   </div>
                 </div>
@@ -236,57 +247,7 @@
                     possimus
                   </p>
                 </div>
-                <div class="testimonials__author-sub">
-                  <img
-                    src="./img/user-2.png"
-                    alt=""
-                    class="testimonials__author-image"
-                  />
-                  <div>
-                    <h3 class="testimonials__author-name">michael carter</h3>
-                    <p class="testimonials__author-position">
-                      product designer
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="testimonials__author-1">
-                <div class="testimonials__rating">
-                  <img src="./img/Stars-1.png" alt="" />
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Culpa earum dolorem a animi eos.Earum, voluptatum. suscipit
-                    quia deserunt harum! Voluptas, voluptatem harum omnis
-                    possimus
-                  </p>
-                </div>
-                <div class="testimonials__author-sub">
-                  <img
-                    src="./img/user-3.png"
-                    alt=""
-                    class="testimonials__author-image"
-                  />
-                  <div>
-                    <h3 class="testimonials__author-name">sarah lee</h3>
-                    <p class="testimonials__author-position">
-                      business analyst
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="testimonials__author-1">
-                <div class="testimonials__rating">
-                  <img src="./img/star-2.png" alt="" />
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Culpa earum dolorem a animi eos.Earum, voluptatum. suscipit
-                    quia deserunt harum! Voluptas, voluptatem harum omnis
-                    possimus
-                  </p>
-                </div>
-                <div class="testimonials__author-sub">
+                <div class="testimonials__author-sub testimonials__author-img">
                   <img
                     src="./img/user-4.png"
                     alt=""
@@ -300,7 +261,65 @@
                   </div>
                 </div>
               </div>
+             </div>
 
+             
+
+             <div class="testimonials__author-submain">
+              <div class="testimonials__author-1 testimonials__author-submain-1">
+                <div class="testimonials__rating">
+                  <img src="./img/star-2.png" alt="" />
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Culpa earum dolorem a animi eos.Earum, voluptatum. suscipit
+                    quia deserunt harum! Voluptas, voluptatem harum omnis
+                    possimus
+                  </p>
+                </div>
+                <div class="testimonials__author-sub   testimonials__author-img">
+                  <img
+                    src="./img/user-2.png"
+                    alt=""
+                    class="testimonials__author-image"
+                  />
+                  <div>
+                    <h3 class="testimonials__author-name"> michael carter</h3>
+                    <p class="testimonials__author-position">
+                      business analyst
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonials__author-1  testimonials__author-submain-2">
+                <div class="testimonials__rating">
+                  <img src="./img/Stars-1.png" alt="" />
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Culpa earum dolorem a animi eos.Earum, voluptatum. suscipit
+                    quia deserunt harum! Voluptas, voluptatem harum omnis
+                    possimus
+                  </p>
+                </div>
+                <div class="testimonials__author-sub   testimonials__author-img">
+                  <img
+                    src="./img/user-5.png"
+                    alt=""
+                    class="testimonials__author-image"
+                  />
+                  <div>
+                    <h3 class="testimonials__author-name"> rachael fooster</h3>
+                    <p class="testimonials__author-position">
+                     project manager
+                    </p>
+                  </div>
+                </div>
+              </div>
+             </div>
+
+            
+             <div>
+              
               <div class="testimonials__author-5">
                 <div class="testimonials__rating">
                   <img src="./img/Stars-1.png" alt="" />
@@ -311,20 +330,20 @@
                     possimus
                   </p>
                 </div>
-                <div class="testimonials__author-sub">
+                <div class="testimonials__author-sub  testimonials__author-img" >
                   <img
-                    src="./img/user-5.png"
+                    src="./img/user-3.png"
                     alt=""
-                    class="testimonials__author-image"
+                    class="testimonials__author-image "
                   />
-                  <div>
-                    <h3 class="testimonials__author-name">rachael fooster</h3>
-                    <p class="testimonials__author-position">project manager</p>
+                  <div class="testimonials__author-5-name">
+                    <h3 class="testimonials__author-name">sarah lee</h3>
+                    <p class="testimonials__author-position"> senior marketing manager </p>
                   </div>
                 </div>
               </div>
 
-              <div class="testimonials__author-1">
+              <div class="testimonials__author-6">
                 <div class="testimonials__rating">
                   <img src="./img/star-2.png" alt="" />
                   <p>
@@ -334,11 +353,11 @@
                     possimus
                   </p>
                 </div>
-                <div class="testimonials__author-sub">
+                <div class="testimonials__author-sub testimonials__author-img ">
                   <img
                     src="./img/user-6.png"
                     alt=""
-                    class="testimonials__author-image"
+                    class="testimonials__author-image "
                   />
                   <div>
                     <h3 class="testimonials__author-name">daniel harris</h3>
@@ -346,6 +365,9 @@
                   </div>
                 </div>
               </div>
+             </div>
+
+          
               <div class="testimonials__author-button2">
                 <button class="btn btn--login FQA">show more</button>
                 <img src="./img/Arrow down.png" alt="" />
@@ -354,60 +376,99 @@
           </div>
         </div>
       </section>
+    </main>
 
-      <section class="footer">
-        <div class="footer__sub">
-          <div class="footer__sub-primary">
-            <img src="./img/Logo.png" alt="" />
-          </div>
+    <section class="footer">
+      <div class="footer__sub">
+        <div class="footer__sub-primary">
+          <img src="./img/Logo.png" alt="" />
+        </div>
 
-          <div class="footer__sub-secondary">
-            <div class="footer__sub-secondary--header">
-              <div class="footer__sub-secondary--header-1">
-                <ul>
-                  <li>home</li>
-                  <li>FQA</li>
-                  <li>Features</li>
-                  <li>companies</li>
-                  <li>testimonials</li>
-                </ul>
-              </div>
+        <div class="footer__sub-secondary">
+          <div class="footer__sub-secondary--header">
+            <div class="footer__sub-secondary--header-1">
+              <ul>
+                <li>home</li>
+                <li>FQA</li>
+                <li>Features</li>
+                <li>companies</li>
+                <li>testimonials</li>
+              </ul>
+            </div>
 
-              <div class="footer__sub-secondary--header-1">
-                <ul>
-                  <li>pricing</li>
-                  <li>plans</li>
-                  <li>billing</li>
-                  <li>free trials</li>
-                  <li>refunds</li>
-                </ul>
-              </div>
+            <div class="footer__sub-secondary--header-1">
+              <ul>
+                <li>pricing</li>
+                <li>plans</li>
+                <li>billing</li>
+                <li>free trials</li>
+                <li>refunds</li>
+              </ul>
+            </div>
 
-              <div class="footer__sub-secondary--header-1">
-                <ul>
-                  <li>about</li>
-                  <li>careers</li>
-                  <li>our stay</li>
-                  <li>contact</li>
-                  <li>policy</li>
-                </ul>
-              </div>
+            <div class="footer__sub-secondary--header-1">
+              <ul>
+                <li>about</li>
+                <li>careers</li>
+                <li>our stay</li>
+                <li>contact</li>
+                <li>policy</li>
+              </ul>
+            </div>
 
-              <div class="footer__sub-secondary--header-1">
-                <ul>
-                  <li>community</li>
-                  <li>forums</li>
-                  <li>stories</li>
-                  <li>blogs</li>
-                  <li>support</li>
-                </ul>
-              </div>
+            <div class="footer__sub-secondary--header-1">
+              <ul>
+                <li>community</li>
+                <li>forums</li>
+                <li>stories</li>
+                <li>blogs</li>
+                <li>support</li>
+              </ul>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-
+      </div>
+    </section>
     
+  <div id="popup" class="popup">
+    
+ <div class="popup__content">
+  <div class="popup__primary">
+    <h1>lets get you signed up</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+      </div>
+    
+      <div class="popup__secondary">
+        <!-- <div class="popup__secondary-toggle">
+          <img src="./img/toggle.png" alt="">
+        </div> -->
+        <div class="popup__secondary-toggle">
+          <a href="#" class="close-popup">
+            <img src="./img/toggle.png" alt="">
+          </a>
+        </div>
+        
+       <div class="popup__secondary-content">
+        <form action="#" class="search">
+          <label for="email">Email</label>
+          <input type="email" id="email" class="popup__secondary-email" placeholder="janedone@gmail.com"/><br>
+          <label for="password">Password</label>
+          <input type="password" id="password" class="popup__secondary-password" placeholder="*************"/>
+        </form>
+        
+       <div class="popup__secondary-sub">
+        <img src="./img/Vector.png" alt="">
+        <p>i agree to all terms</p>
+       </div>
+       <div class="popup__secondary-btn">
+        <button class="btn btn--primary">get started</button>
+       </div>
+      </div>
+       </div>
+ </div>
+  </div>
+   
   </body>
 </html>

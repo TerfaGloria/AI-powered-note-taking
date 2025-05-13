@@ -1,8 +1,9 @@
+@use "../abstract" as abstract;
 .btn{
  
  border-radius: var( --round-border);
  margin: .4rem;
- cursor: pointer;
+ cursor: pointer !important;
 
 
  
@@ -16,7 +17,7 @@
     padding-right: 32px;
     padding-bottom: 14px;
     padding-left: 32px;
-    background-color: var(--color-black);
+    background-color: transparent;
     border: 1px solid var(--color-white);
  box-shadow: 0px 0px 10px 0px #44E5E74D;
  cursor: pointer;
@@ -40,9 +41,48 @@ box-shadow: 0px 0px 25px 0px #44E5E74D;
 border: none;
 cursor: pointer;
 
+ @media  only screen and (max-width:abstract.$bp-semi-large-2){
+      //  visibility: hidden;
+    }
+
+
 
 
 }
 
 
 }
+
+.login {
+    &,
+   &:link,
+   &:visited {
+   
+   font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    color: var(--color-white-primary);
+    border: 2px solid var(--color-white);
+    box-shadow: 0px 0px 10px 0px #44E5E74D;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: var(--round-border);
+    padding: 1.5rem 2rem;
+    background-color: transparent;
+    display: inline-block;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+
+
+   @media  only screen and (max-width:abstract.$bp-semi-large-2){
+      // visibility: visible;
+    }
+
+}
+
+}
+
+
+
+    

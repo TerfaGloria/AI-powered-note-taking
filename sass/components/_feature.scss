@@ -1,3 +1,4 @@
+@use "../abstract" as abstract;
 .smart{
 
    &__header{
@@ -24,8 +25,8 @@
     &-logo{
      
         img{
-    width: 65rem;
-     height: 60rem;
+    width: 60rem;
+     height: auto;
      margin-top: 10rem;
      flex: 0 0 70%;
 
@@ -35,32 +36,30 @@
 
     &-text{
         align-self: center;
-        padding: 0 11rem;
+        padding-left: 12rem;
         margin-top: 3rem;
     
         h1{
           
         width: 45rem;
-        height: 3.5rem;
         font-family:' Poppins', sans-serif;
        font-weight: 600;
        font-size: 4.5rem;
-       line-height: 4.3rem;
        letter-spacing: -5%;
      
        
         }
 
         p{
-        width: 37rem;
-         height: 12.5rem;
+        width: 37.5rem;
+    
 
         font-family:' Poppins', sans-serif;
          font-weight: 300;
          font-size: 2rem;
-        line-height: 2.90rem;
+        line-height: 2.99rem;
         letter-spacing: 0%;
-        margin-top: 4rem;
+        margin-top: 1rem;
         margin-left:.90rem;
         color:var(--color-secondary-light);
 
@@ -83,12 +82,10 @@
 
         h1{
             width:45rem;
-         height: 3.8rem;
          font-family:' Poppins', sans-serif;
         font-weight: 600;
         font-size: 4rem;
-      line-height:2rem;
-      letter-spacing: -5%;
+       letter-spacing: -5%;
       text-transform: capitalize;
 
 
@@ -96,8 +93,7 @@
 
         p{
         width: 45rem;
-        height: 12.7rem;
-      font-family:' Poppins', sans-serif;
+     font-family:' Poppins', sans-serif;
       font-weight: 300;
       font-size: 2.1rem;
       line-height:3.7rem;
@@ -115,9 +111,18 @@
       
         img{
             width:55rem;
-            height:70rem;
+            height:auto;
             margin-left: 11rem;
-           
+             @media only screen and (max-width: abstract.$bp-semi-large-2) {
+                     width:47rem;
+                    margin-left: 6rem;
+                    overflow: hidden !important;
+                }
+            @media only screen and (max-width: abstract.$bp-semi-large-3) {
+                     width:40rem;
+                    height:50rem;
+                     overflow: hidden !important;
+                }
         }
 
 

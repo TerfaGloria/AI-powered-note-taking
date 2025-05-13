@@ -1,30 +1,91 @@
-
+@use "../abstract" as abstract;
 
 *{
     margin: 0;
     padding: 0;
+     outline: none;
+       overflow-x: hidden !important;
+       box-sizing: border-box !important;
+
 }
 
-*,
-*::before
-*::after{
-    box-sizing:inherit;
+*, *::before, *::after{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+      overflow-x: hidden;
 }
 
 html{
     box-sizing: border-box;
     font-size: 62.5%;
+    width: 100%;
+    overflow-x: hidden;
+      margin: 0;
+     padding: 0;
+
+       @media  only screen and (max-width:abstract.$bp-semi-large-4){
+        padding: 0;
+        margin: 0;
+         overflow-x: hidden !important;
+        
+  }
+
+
+   
 }
 
 body{
-    width: 100%;
+    max-width: 100%;
     font-family: 'open sans', sans-serif;
     font-weight: 400;
     line-height: 1.6;
     color: var(--color-white);
     min-height: 100vh;
     color: #ECFCFD;
+    margin: 0 ;
+    padding: 0 ;
+     overflow-x: hidden;
 
-   
+    // @media  only screen and (max-width:abstract.$bp-large){
+    //     padding: 0 ;
+    //     margin: 0;
+    //      overflow-x: hidden;
+        
+    // }
+
+    //  @media  only screen and (max-width:abstract.$bp-semi-large){
+    //     padding: 0;
+    //     margin: 0;
+    //      overflow-x: hidden;
+        
+    // }
+    //  @media  only screen and (max-width:abstract.$bp-semi-large-1){
+    //     padding: 0;
+    //     margin: 0;
+    //      overflow-x: hidden;
+        
+    // }
+
+     @media  only screen and (max-width:abstract.$bp-semi-large-2){
+        padding: 0;
+        margin: 0;
+         overflow-x: hidden;
+      
+        
+    }
+   @media  only screen and (max-width:abstract.$bp-semi-large-4){
+        padding: 0;
+        margin: 0;
+         overflow-x: hidden ;
+        
+  }
+
+        
+    
+
+
+
+ 
 
 }

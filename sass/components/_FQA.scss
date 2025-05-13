@@ -1,3 +1,4 @@
+@use "../abstract" as abstract;
 .FQA__heading {
     
       .FQA__primary {
@@ -6,11 +7,9 @@
            align-self: center;
         h1{
             width: 90rem;
-            height: 10rem;
             font-family:' Poppins', sans-serif;
             font-weight: 600;
             font-size: 60px;
-            line-height: 72px;
             letter-spacing: -5%;
             text-align: center;
             text-transform: capitalize;
@@ -18,7 +17,6 @@
 
         p{
             width:63rem;
-           height: 7rem;
            font-family:' Poppins', sans-serif;
         font-size: 1.80rem;
         line-height: 3.3rem;
@@ -82,14 +80,23 @@
     
                   h4{
                     width: 20rem;
-                     height: 2.80rem;
-                     font-family: 'Poppins', sans-serif;
+                    font-family: 'Poppins', sans-serif;
                      font-weight: 500;
                      font-size: 2.5rem;
                      line-height: 3rem;
                     letter-spacing: -2.5%;
                     padding-left: var( --pad-left);
-                    flex:0 0 65% ;
+                    flex:0 0 59% ;
+                    
+    @media only screen and (max-width: abstract.$bp-semi-large-2) {
+               
+            flex:0 0 62% ;
+             overflow: hidden !important;
+         }
+    @media only screen and (max-width: abstract.$bp-semi-large-3) {
+                      flex:0 0 70% ;
+                       overflow: hidden !important;
+                }
                 
       
                     }
@@ -106,8 +113,7 @@
                     font-size: 1.50rem;
                     line-height:2.5rem;
                     letter-spacing: 0%;
-                    width: 48rem;
-                    height: 5rem;
+                    width: 55rem;
                     margin: 2rem ;
                     padding-left: 7rem;
                     color: var(--color-secondary-light);

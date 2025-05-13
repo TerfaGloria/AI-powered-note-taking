@@ -1,3 +1,5 @@
+@use "../abstract" as abstract;
+
 .testimonials__subhead {
     .testimonials__primary {
         display: flex;
@@ -30,21 +32,21 @@
     }
     .testimonials__title{
         width: 826px;
-        height: 144px;
         font-family: 'Poppins',sans-serif;
         font-weight: 600;
       font-size: 60px;
-      line-height: 72px;
-      letter-spacing: -5%;
+       letter-spacing: -5%;
       text-align: center;
       margin-top: 2rem;
+  
 
       }
 
      
 
+      
       .testimonials__description{
-        width: 614px;
+        width: 514px;
         height: 80px;
        font-family: 'Poppins',sans-serif;
       font-weight: 300;
@@ -59,14 +61,20 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        padding: 2.7rem;
+        padding: 16rem;
         align-items:center;
         margin-left:2rem;
-      
+         @media only screen and (max-width: abstract.$bp-semi-large-2) {
+          padding: 13rem;
+    }
+       @media only screen and (max-width: abstract.$bp-semi-large-3) {
+                      padding: 8rem;
+                }
+               
         
       
-
-   }
+  
+ }
    .testimonials__author-1{
 
  width: 310px;
@@ -82,13 +90,28 @@ align-items: center;
 
 
 }
+
+.testimonials__author-first{
+  width: 310px;
+  height: 459px;
+  gap: 64px;
+  padding-top: 40px;
+  padding-right: 32px;
+  padding-bottom: 40px;
+  padding-left: 32px;
+  border-radius: 16px;
+  background: #0E2E2E;
+  align-items: center;
+  margin-bottom: -13rem;
+   
+}
 .testimonials__author-sub{
     display: flex;
     align-items: center;
     text-transform: capitalize;
     
     h3{
-        margin-left: 2rem;
+        margin-left: 1.1rem;
         font-family:'Poppins',sans-serif;
        font-weight: 700;
       font-size: 20px;
@@ -103,7 +126,7 @@ align-items: center;
        font-family:'Poppins',sans-serif;
       font-weight: 400;
       font-size: 15px;
-     line-height: 32px;
+     line-height: 30px;
      letter-spacing: -2.5%;
 
     }
@@ -114,13 +137,12 @@ align-items: center;
 
     p{
         width: 320px;
-       height: 339px;
       font-family: 'Poppins',sans-serif;
       font-weight: 300;
      font-size: 18px;
-     line-height: 36px;
+     line-height: 30px;
      letter-spacing: 0%;
-     margin-top: 5rem;
+     margin-top: 4rem;
 
     }
 }
@@ -129,16 +151,17 @@ align-items: center;
 
  
   width: 310px;
-  // height: 580px;
-  gap: 64px;
-  padding-top: 40px;
-  padding-right: 32px;
-  padding-bottom: 40px;
-  padding-left: 32px;
-  border-radius: 16px;
-  background: #0E2E2E;
-  align-items: center;
- 
+    height: 459px;
+    gap: 64px;
+    padding-top: 40px;
+    padding-right: 32px;
+    padding-bottom: 40px;
+    padding-left: 32px;
+    border-radius: 16px;
+    background: #0E2E2E;
+    align-items: center;
+    margin-top: 17.50rem;
+  
  
  
 }
@@ -148,7 +171,7 @@ align-items: center;
 .testimonials__author-5{
 
     width: 310px;
-    // height: 508px;
+    height: 459px;
     gap: 64px;
     padding-top: 40px;
     padding-right: 32px;
@@ -157,7 +180,33 @@ align-items: center;
     border-radius: 16px;
     background: #0E2E2E;
     align-items: center;
-    // padding-top: 10rem;
+    margin-bottom: -13rem
+   
+
+}
+
+.testimonials__author-img{
+  margin-top: 2.1rem;
+}
+
+
+
+.testimonials__author-6{
+
+  width: 310px;
+  height: 459px;
+  gap: 64px;
+  padding-top: 40px;
+  padding-right: 32px;
+  padding-bottom: 40px;
+  padding-left: 32px;
+  border-radius: 16px;
+  background: #0E2E2E;
+  align-items: center;
+   margin-top: 17.50rem;
+  
+   
+ 
 }
 
 .testimonials__author-button2{
@@ -165,15 +214,14 @@ align-items: center;
  align-items: center;
  display: flex;
  transform: translateX(-50%, -50%);
- top: -18rem;
+ top: -40rem;
  bottom:0;
  right: 0;
- left: 52rem;
+ left: 39rem;
  
   button{
     
   width: 198px;
-  height: 64px;
   gap: 12px;
   padding-top: 16px;
   padding-right: 32px;
@@ -199,3 +247,34 @@ img{
 
   }
   
+  .testimonials__author-submain{
+    display: grid;
+  grid-template-rows: 1.7fr 1.2fr; 
+  grid-auto-flow: column;
+
+
+  
+    &-1{
+      width: 310px;
+      height: 880px;
+      gap: 64px;
+      padding-top: 40px;
+      padding-right: 32px;
+      padding-bottom: 40px;
+      padding-left: 32px;
+      border-radius: 16px;
+      background: #0E2E2E;
+      align-items: center;
+      margin-top: 3.80rem;
+     
+   
+
+    }
+
+    &-2{
+      margin-top:-60px;
+    
+    }
+
+    
+  }
