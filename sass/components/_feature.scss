@@ -1,16 +1,46 @@
 @use "../abstract" as abstract;
 .smart{
 
+   
+
    &__header{
     
-        text-transform:capitalize;
-        font-family:' Poppins', sans-serif;
-        font-weight: 600;
-        font-size: 60px;
-        line-height: 72px;
-        letter-spacing: -5%;
-        text-align: center;
-        
+      
+          text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 6rem; 
+    line-height: 1.2; 
+    letter-spacing: -5%;
+    text-align: center;
+    width: 959px;
+    padding-left:5.2rem;
+
+    
+
+     @media only screen and (max-width: 996px) {
+    font-size: 4rem; 
+    width: 490px;
+    padding-left:7.5rem;
+     }
+       @media only screen and (max-width: 668px) {
+    font-size: 4rem; 
+    width: 440px;
+    padding-left:0;
+     }
+      @media only screen and (max-width: 496px) {
+                 font-size: 3rem;
+                 width: 470px;
+                padding-right: 16rem;
+                                        
+             }
+               @media only screen and (max-width: 406px) {
+                 font-size: 2.50rem;
+                 width: 420px;
+                padding-right: 16rem;
+                                        
+             }
+
         span{
             color: var(--color-secondary);
         }
@@ -18,50 +48,99 @@
           }
 
 &__organization{
-    display: flex;
+   
+     display: flex;
     align-items: center;
+     @media only screen and (max-width: 1222px) {
+     display: flex;
+     flex-direction:column-reverse;
+      
+    }
+
+  
+
 
 
     &-logo{
-     
+      flex-basis: 60%;
+    
         img{
-    width: 60rem;
-     height: auto;
-     margin-top: 10rem;
-     flex: 0 0 70%;
+    
+     width: 100%; 
+        height: auto;
+        margin-top: 10.5rem; 
 
+ @media only screen and (max-width: 1222px) {
+          width: 70%;
+    }
     
         }
     }
 
     &-text{
-        align-self: center;
-        padding-left: 12rem;
-        margin-top: 3rem;
+        
+         flex-basis: 40%; 
+    padding-left: 6rem;
+    @media only screen and (max-width: 496px) {
+                 
+                  padding-left:0px;
+               }
+    
     
         h1{
           
-        width: 45rem;
+        width: 100%;
         font-family:' Poppins', sans-serif;
        font-weight: 600;
-       font-size: 4.5rem;
+           font-size: 4rem;
        letter-spacing: -5%;
+    
+        @media only screen and (max-width:1222px) {
+          margin-top: 10rem;
+        }
+        
+        @media only screen and (max-width: 768px) {
+          font-size: 3.50rem; 
+        }
+         @media only screen and (max-width: 496px) {
+                 font-size: 3rem;
+                  
+               }
+    
+                
+                                        
+            
+
+
      
        
         }
 
         p{
-        width: 37.5rem;
+       
+        width: 100%; 
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+      font-size: 2rem;
+      line-height: 2.99rem;
+      letter-spacing: 0%;
+      margin-top: 1rem;
+      color: var(--color-secondary-light);
+      margin-left: 0; 
+         @media only screen and (max-width: 1222px) {
+      width: 65%;
+       font-size: 2.5rem;
+        line-height:3.13rem;
+    }
+    @media only screen and (max-width: 768px) {
+          width: 70%;
+           font-size: 2.1rem;
+        line-height:3.13rem;
+        }
+         @media only screen and (max-width: 496px) {
+                 width: 100%;
+               }
     
-
-        font-family:' Poppins', sans-serif;
-         font-weight: 300;
-         font-size: 2rem;
-        line-height: 2.99rem;
-        letter-spacing: 0%;
-        margin-top: 1rem;
-        margin-left:.90rem;
-        color:var(--color-secondary-light);
 
 
         }
@@ -71,37 +150,76 @@
 
 
 &__reminder{
-    display: flex;
-    margin-top: 10rem;
+    
+     display: flex;
+    margin-top: 8rem; 
     align-items: center;
+      @media only screen and (max-width: 1222px) {
+     display: flex;
+     flex-direction:column;
+      
+    }
+
+    
+
+
 
     &-text{
 
     
-     padding-right: 3.8rem;
+     padding-right: 2rem; 
+      @media only screen and (max-width: 496px) {
+                 padding-right: 0px;
+               }
+      
+
 
         h1{
-            width:45rem;
-         font-family:' Poppins', sans-serif;
+             font-size: 4rem;
+        width: 100%; 
+        font-family:' Poppins', sans-serif;
         font-weight: 600;
-        font-size: 4rem;
-       letter-spacing: -5%;
+        letter-spacing: -5%;
       text-transform: capitalize;
-
+       @media only screen and (max-width: 496px) {
+              
+                font-size: 3rem;
+               }
+ @media only screen and (max-width: 392px) {
+              
+                font-size: 2.80rem;
+               }
+               @media only screen and (max-width: 375px) {
+              
+                font-size: 2.50rem;
+               }
 
         }
 
         p{
-        width: 45rem;
-     font-family:' Poppins', sans-serif;
+        
+         font-size: 1.8rem; 
+        width: 80%; 
+       font-family:' Poppins', sans-serif;
       font-weight: 300;
-      font-size: 2.1rem;
       line-height:3.7rem;
       letter-spacing: 0%;
       margin-top: 1.90rem;
       color: var(--color-secondary-light);
 
+      @media only screen and (max-width: 1222px) {
+    width: 60%;
+    font-size: 2.5rem;
     
+    }
+  @media only screen and (max-width: 768px) {
+          width: 70%;
+           font-size: 2.1rem;
+        
+        }
+         @media only screen and (max-width: 496px) {
+                 width: 100%;
+               }
 
         }
 
@@ -110,19 +228,17 @@
     &-logo{
       
         img{
-            width:55rem;
-            height:auto;
-            margin-left: 11rem;
-             @media only screen and (max-width: abstract.$bp-semi-large-2) {
-                     width:47rem;
-                    margin-left: 6rem;
-                    overflow: hidden !important;
-                }
-            @media only screen and (max-width: abstract.$bp-semi-large-3) {
-                     width:40rem;
-                    height:50rem;
-                     overflow: hidden !important;
-                }
+           
+             width: 100%; 
+        height: auto;
+        margin-left: 0; 
+
+          
+      @media only screen and (max-width: 1222px) {
+    width: 70%;
+    margin-top: 10rem;
+    
+    }
         }
 
 

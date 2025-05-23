@@ -3,10 +3,20 @@
 }
 .logo-section {
     background: linear-gradient(180deg, #0E2E2E 0%, #061212 100%);
-    height: 27.6rem;
     padding: 4rem;
+    
   
     .logo__text {
+       @media only screen and (max-width: 420px) {
+                  font-size: 2rem;
+                  width: 37rem;
+                  }
+                   @media only screen and (max-width: 392px) {
+                  font-size: 1rem;
+                  width: 37rem;
+                  margin-left: -3.5rem;
+                  }
+                  
       p {
         font-family: "Poppins", sans-serif;
         font-weight: 300;
@@ -24,29 +34,81 @@
         font-size: 2.8rem;
         line-height: inherit;
         letter-spacing: 0%;
+         @media only screen and (max-width: 420px) {
+                  font-size: 2.4rem;
+          }
+            @media only screen and (max-width: 392px) {
+                  font-size: 2rem;
+                  
+                  }
       }
     }
   
     .logo__img {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(2, auto);
+      grid-template-rows: repeat(4, auto);
       gap: 40px;
       justify-items: center;
       margin-top: 5rem;
+       
   
       img {
-        width: 40%;
-        height: auto;
+       
+         max-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+
+         @media only screen and (max-width:1222px) {
+         display: none;
+         
+
+  }
       
 
       }
+
+       
+     
+    }
+    .logo__img-mobile {
+    display: none;
+
+    @media only screen and (max-width: 1222px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, auto);
+      gap: 50px;
+      justify-items: center;
+      overflow-x: hidden;
+      
+    }
+
+     @media only screen and (max-width: 496px) {
+                    gap: 30px;
+                    
+               }
+
+    img {
+      width: 30%;
+      height: auto;
     }
   }
+}
+
+
+
+
+
+  
 
   .feature-section{
     background-color: #061212;
     padding: 9.5rem;
+      @media only screen and (max-width: 496px) {
+                   padding: 5rem;
+               }
     
 
  
@@ -55,6 +117,10 @@
   .FQA-section{
     background: linear-gradient(180deg, #061212 0%, #0E2E2E 100%);
     padding:10rem 0 0 12rem;
+     @media only screen and (max-width: 496px) {
+                             padding:10rem 0 0 4rem;
+                     }
+
     
 
   }
@@ -65,11 +131,25 @@
 
 }
 
-.footer{
+
+.footer {
   background:transparent;
-  margin-top: -180rem;
- 
+  transform: translateY(-180rem);
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+   height: auto;
+
+  @media only screen and (max-width: 1222px) {
+    transform: translateY(0);
+      background: linear-gradient(180deg, #061212 0%, #0E2E2E 100%);
+      
+  }
 }
+
+
+
 
   
   

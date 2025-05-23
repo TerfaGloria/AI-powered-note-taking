@@ -2,83 +2,126 @@
 .FQA__heading {
     
       .FQA__primary {
+        
         .FQA__primary-text {
 
            align-self: center;
+
+             
         h1{
-            width: 90rem;
-            font-family:' Poppins', sans-serif;
-            font-weight: 600;
-            font-size: 60px;
-            letter-spacing: -5%;
-            text-align: center;
-            text-transform: capitalize;
+           
+            font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 4.60vw; 
+        letter-spacing: -5%;
+        text-align: center;
+        text-transform: capitalize;
+        width: 850px;
+        margin-left: 15rem;
+        @media only screen and (max-width: 996px) {
+                              display: flex;
+                               align-items: flex-start; 
+                          
+                            margin-left:0;
+                       
+
+            }
+              @media only screen and (max-width: 996px) {
+                               width: 200px;
+                                font-size: 5.5vw; 
+                                text-align: start;
+                          
+                       
+
+            }
+
         }
 
         p{
-            width:63rem;
-           font-family:' Poppins', sans-serif;
-        font-size: 1.80rem;
+      
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.8rem;
         line-height: 3.3rem;
-         letter-spacing: 0%;
-         text-align: center;
-         color: var(--color-secondary-light);
-         margin-left: 15rem;
+        letter-spacing: 0%;
+        text-align: center;
+        color: var(--color-secondary-light);
+        margin: 2rem auto; 
+        max-width: 63rem; 
+          @media only screen and (max-width: 996px) {
+                              
+              display: none;   
+                       
 
-          
-        }
+            }
+       
+       }
+
         span{
             border-bottom: 0.2px solid var(--color-secondary-light);
+           
         }
         }
   
         .FQA__primary-buttons {
-         margin-left: 17rem;
+      
          margin-top: 3rem;
+      text-align: center; 
+      button.btn {
+        width: 15rem;
+        height: 7rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        text-transform: capitalize;
+        letter-spacing: 0%;
+        &:not(:first-child) {
+          box-shadow: none;
+          background-color: transparent;
 
-         button.btn {
-            width: 14rem;
-             height: 32;
-   
-            height: 7rem;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 300;
-            font-size: 18px;
-            line-height: 32px;
-            text-transform: capitalize;
-            letter-spacing: 0%;
-            
-
-            &:not(:first-child){
-                box-shadow: none;
-                background-color: transparent;
-            }
-          }
           
-        
+        }
+          }
+           @media only screen and (max-width: 1222px) {
+              display: grid;
+                   grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 10px;
+        width: 35rem;
+        margin-left: 25rem;
     }
+          @media only screen and (max-width: 996px) {
+                              margin-left:0; 
+                           
+                       
 
-
-        
-     
-      }
+            }
+            
+       }
+    }
   
       .FQA__secondary {
         padding: 10rem;
+         @media only screen and (max-width: 996px) {
+                            padding:6rem 0 0 0;   
+                       
+
+            }
+      
+         
 
 
         .FQA__secondary--question-1{
-
+          
             .FQA__secondary--question{
+
+             
                 &-sub {
                  
                   align-items: center;
                   display: flex;
+                  
                 
- 
-
-    
-                  h4{
+                 h4{
                     width: 20rem;
                     font-family: 'Poppins', sans-serif;
                      font-weight: 500;
@@ -86,19 +129,33 @@
                      line-height: 3rem;
                     letter-spacing: -2.5%;
                     padding-left: var( --pad-left);
-                    flex:0 0 59% ;
+                    flex:0 0 65% ;
                     
-    @media only screen and (max-width: abstract.$bp-semi-large-2) {
-               
-            flex:0 0 62% ;
-             overflow: hidden !important;
-         }
-    @media only screen and (max-width: abstract.$bp-semi-large-3) {
-                      flex:0 0 70% ;
-                       overflow: hidden !important;
-                }
-                
+                        @media only screen and (max-width: 1286px) {
+                            flex:0 0 68% ;
+                     }
+        
+                   @media only screen and (max-width: 1222px) {
+                         flex:0 0 78% ;
+                     }
+                       @media only screen and (max-width: 996px) {
+                              flex:0 0 44%;
+                              padding-left: 2rem;;
+                         }
       
+                           
+                        @media only screen and (max-width: 591px) {
+                              flex:0 0 65%;
+                              padding-left: 2rem;;
+                         }
+                           @media only screen and (max-width: 496px) {
+                                       padding-left: 1.80rem;
+                                         flex:0 0 55%;
+                                }
+
+      
+
+           
                     }
 
                   
@@ -108,15 +165,24 @@
                 }
                
                p{
-                    font-family: 'Poppins', sans-serif;
-                    font-weight: 300;
-                    font-size: 1.50rem;
-                    line-height:2.5rem;
-                    letter-spacing: 0%;
-                    width: 55rem;
-                    margin: 2rem ;
-                    padding-left: 7rem;
-                    color: var(--color-secondary-light);
+                   
+               width: 47rem;
+              font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      letter-spacing: 0%;
+      margin: 2rem 0 2rem 7rem;
+      color: var(--color-secondary-light);
+                         
+      @media only screen and (max-width: 996px) {
+                                width: 35rem;
+                           margin: 1rem 0 1rem 3.5rem; 
+           }
+                        @media only screen and (max-width: 496px) {
+                                width: 35rem;
+                           margin: 1rem 0 1rem 0rem; 
+           }
 
                     
                 }
@@ -131,22 +197,44 @@
           
 
           h4{
+          
             font-family: 'Poppins', sans-serif;
            font-weight: 500px;
           font-size: 20px;
           line-height: 40px;
          letter-spacing: -2.5%;
-         height: 40px;
+         height: auto;
          padding-left:var( --pad-left);
-         
+           width:53rem;
          
 
 
-          }
+            
+
+          @media only screen and (max-width: 1079px) {
+                        font-size: 15px;
+                     }
+                       @media only screen and (max-width: 996px) {
+                                width:25rem;
+                                 padding-left:2rem;
+                               }
+                                 @media only screen and (max-width: 496px) {
+                                       padding-left: 1.80rem;
+                                        width:22rem;
+                                        
+                                }
+                 }
 
           .arrow-down{
             img{
-              margin-left: 7rem;
+              margin-left: 15rem;
+              
+                 
+                @media only screen and (max-width: 996px) {
+   
+                            margin-left:-0;
+                       }
+                
             }
           }
          
@@ -165,15 +253,34 @@
            font-size: 20px;
            line-height: 40px;
           letter-spacing: -2.5%;
-          height: 40px;
+          height: auto;
+             width:48.19rem;
           padding-left:var( --pad-left);
-          
-          }
+             @media only screen and (max-width: 1079px) {
+                        font-size: 15px;
+                     }
+         @media only screen and (max-width: 996px) {
+                            padding-left:2rem;  
+                             width:20rem; 
+                           
+           }
+             @media only screen and (max-width: 496px) {
+                                  padding-left: 1.80rem; 
+                                  width: 20rem;
+                           }
+                 }
 
           .arrow-down{
             img{
-              margin-left: 12.4rem;
+              margin-left: 20rem;
             }
+              @media only screen and (max-width: 996px) {
+   
+                            margin-left:-15rem;
+                       }
+                        @media only screen and (max-width: 496px) {
+                                   margin-left:-18rem;
+                           }
           }
         }
         
@@ -190,15 +297,38 @@
            font-size: 20px;
            line-height: 40px;
           letter-spacing: -2.5%;
-          height: 40px;
+          height: auto;
           padding-left:var( --pad-left);
-          
+             width:46rem;
+             @media only screen and (max-width: 1079px) {
+                        font-size: 15px;
+                     }
+         
+            @media only screen and (max-width: 996px) {
+                            padding-left:2rem; 
+                             width:19rem;  
+                           
+           }
+             @media only screen and (max-width: 496px) {
+                                       padding-left: 1.80rem;
+                                          //  width:17rem;  
+                           
+                                }
           }
 
           .arrow-down{
             img{
-              margin-left: 14.7rem;
+              margin-left: 22rem;
             }
+
+              @media only screen and (max-width: 996px) {
+   
+                            margin-left: -15.5rem;
+                       }
+                        @media only screen and (max-width: 496px) {
+                                       margin-left: -19rem;
+                           
+                                }
           }
 
         }
@@ -216,15 +346,38 @@
            font-size: 20px;
            line-height: 40px;
           letter-spacing: -2.5%;
-          height: 40px;
+          height: auto;
           padding-left:var( --pad-left);
+             width:38rem;
+             @media only screen and (max-width: 1079px) {
+                        font-size: 15px;
+                     }
+           @media only screen and (max-width: 996px) {
+                            padding-left:2rem;  
+                             width:18rem; 
+                           
+           }
+             @media only screen and (max-width: 496px) {
+                                       padding-left: 1.80rem;
+                                        
+                                }
           
           }
 
           .arrow-down{
             img{
-              margin-left: 22.5rem;
+              margin-left: 30rem;
             }
+
+             @media only screen and (max-width: 996px) {
+   
+                            margin-left: -22.50rem;
+                       }
+                        @media only screen and (max-width: 496px) {
+                                       margin-left: -27rem;
+                                        
+                                }
+                        
           }
         
         }

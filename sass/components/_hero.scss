@@ -1,51 +1,99 @@
 @use "../abstract" as abstract;
 .hero{
+  height: auto;
+
+
+      &__sub {
     display: flex;
     align-items: center;
-  
+    justify-content: center;
+    height: auto;
     
-  @media only screen and (max-width: abstract.$bp-semi-large-4) {
-    flex-direction: column;
+
+    @media only screen and (max-width:1222px) {
+      flex-direction: column;
+    }
+     @media only screen and (max-width: 482px) {
+                margin-bottom: 5rem;
+                  
+               }
+  
   }
 
- 
 
       
 
    &__text{
- 
-  margin-top: 10rem;
-  padding: 9.5rem;
-    line-height: .0.2rem;
-     @media only screen and (max-width: abstract.$bp-semi-large-4) {
-    margin-top: 0;
-    margin-left: 20rem;
-     display: flex !important;
-    flex-direction: column !important;
+     
+   flex-basis: 40%; 
+  padding: 2rem;
+  margin-left: 5rem;
 
+  
+
+  @media only screen and (max-width:1222px) {
+    flex-basis: 100%;
+    padding: 1rem;
+    margin-left: 0; 
+    margin-top: 15rem;
   }
-    
-
+ 
+ @media only screen and (max-width: 482px) {
+                margin-top:5rem;
+                  
+               }
+  
+   @media only screen and (max-width: 392px) {
+               
+                   margin-left: 3rem;
+                  
+               }
 
 
   h4{
-    width: 50rem;
-  height: 8rem;
+    width: 47rem;
   font-family:' Poppins', sans-serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 2.5rem;
   line-height:3.2rem;
   letter-spacing: 0%;
   color:var( --color-secondary-light);
   margin-bottom:0;
  
-
+  @media only screen and (max-width: 1286px) {
   
+    
+   flex-basis: 80%;
+    padding: 1rem;
+    margin-left: 0;
+    
+  }
 
+   @media only screen and (max-width: 1222px) {
+  
+  
+    margin-left: 0;
 
-   
+    font-size: 2.3rem;
+    line-height: 3rem;
 
   }
+    @media only screen and (max-width: 482px) {
+                  font-size: 2.3rem;
+                  width: 39rem;
+                 
+               }
+                  @media only screen and (max-width: 392px) {
+                font-size: 1.80rem;
+                width: 34rem;
+                 line-height: 2.5rem;
+                  
+                  
+               }
+
+
+   }
+   
    }
    &__note{
     flex:0 0 40%;
@@ -58,75 +106,142 @@
   width: 450px;
   height: 218px;
 
-   }
+   @media only screen and (max-width: 1286px) {
+  
+     flex-basis: 80%;
+    padding:0;
+    margin-left: 0;
+    
+  }
+
+    @media only screen and (max-width: 1222px) {
+  
+   
+   flex-basis: 85%;
+ font-size: 3.5rem;
+ line-height: 60px;
+
+ 
+  }
+    @media only screen and (max-width: 496px) {
+                  font-size: 2.50rem;
+                   flex-basis: 35%;
+                   line-height: 45px;
+                   width: 320px;
+                   height: auto;
+               }
+
+  @media only screen and (max-width: 482px) {
+                  font-size: 2.5rem;
+                   flex-basis: 35%;
+                   line-height: 40px;
+                   width: 310px;
+                   height: auto;
+                   
+                  
+               }
+                 @media only screen and (max-width: 392px) {
+                font-size: 2rem;
+                   flex-basis: 30%;
+                   line-height: 40px;
+                   width: 260px;
+                  
+                  
+               }
+
+ 
+}
    
     &__img{
-        flex:0 0 85%;
-        position: absolute;
-        top:80%;
-        left:90%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        height:auto;
-          @media only screen and (max-width: abstract.$bp-semi-large-2) {
-        width: 70%;
-        left:68%;
-         top:65%;
-    }
+        
+         flex-basis: 70%;
+         margin-right: 4rem;
+          @media only screen and (max-width: 1222px) {
+      flex-basis: 100%;
+      margin-right: 0;
+      padding: 1rem;
 
-      @media only screen and (max-width: abstract.$bp-semi-large-4) {
-  
-      margin-top: 10rem;
-       display: flex;
-    flex-direction: column;
-     width: 10%;
+       @media only screen and (max-width: 496px) {
+                  margin-right: 0px;
+               }
+
+        
+       img{
+      width: 100%;
       height: auto;
-      margin-top: 10rem; 
-       left:0;
-        transform:none;
-         top:0;
-      // align-self: center;
-  
-      
+      object-fit: cover;
+          @media only screen and (max-width: 1222px) {
+       
+      margin-top: -7rem;
+  }
 
-      
+   @media only screen and (max-width: 496px) {
+                 
+               }
     }
+   }
 
 
         
        
     }
 &--btn{
-    margin-top: 2rem;
-    font-size: 15px;
+   
+     margin-top: 2rem;
+    font-size: 1.5rem;
+       @media only screen and (max-width: 1222px) {
+        margin-top: 5rem;
+        padding: 3.2rem;
+        font-size: 1.50rem;
+          @media only screen and (max-width: 420px) {
+                  padding: 2.20rem;
+                    font-size: 1.50rem;
+                     margin-top: 3rem;
+                  
+                 
+                  
+                 
+               }
+    
+      
+      
+       
+     }
+
 }
 
 &__recommend{
-  display: flex;
-  align-items: center;
-  margin-left:9.5rem;
+ 
 
-   @media only screen and (max-width: abstract.$bp-semi-large-4) {
-    margin-left: 0;
-    flex-direction: column;
+  display: flex;
     align-items: center;
-     overflow: hidden !important;
-  }
+    margin-top:-3rem;
+    margin-left: 3rem;
+    height: auto;
+
+    @media only screen and (max-width:1222px) {
+      flex-direction: column;
+       margin-top:-10rem;
+    display: flex;
+    align-items: flex-start; 
+  justify-content: flex-start; 
+
+    }
+
 
 }
 &__recommend-friends{
- 
-
-
-
+   display: flex;
+  
+   
 img{
-  width: 20rem;
- flex: 0 0 20%;
- border:1px solid var(--color-white);
- box-sizing: content-box;
-height: 4rem;
-width: 4rem;
-border-radius: 50%;
+
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      border: 1px solid var(--color-white);
+      
+
 
 
 &:not(:last-child){
@@ -134,21 +249,32 @@ margin-right: -2rem;
 }
 
 }
+ 
 }
 
 &__recommend-text{
 
-font-family: Poppins;
-font-weight: 700;
-font-size: 1.30rem;
-line-height: 2rem;
-letter-spacing: -5%;
-margin-left: .4rem;
+
+ font-family:" Poppins";
+    font-weight: 700;
+    font-size: 1.30rem;
+    line-height: 2rem;
+    margin-left: 0.4rem;
+    height: auto;
+
+
 
 
 span{
   color: var(--color-secondary);
+ 
 }
+  @media only screen and (max-width:1222px) {
+  margin-top: 2.1rem;
+   font-size: 1.50rem;
+
+  }
+
 }
 
 
