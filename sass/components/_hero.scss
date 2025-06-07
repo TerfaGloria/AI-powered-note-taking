@@ -1,6 +1,7 @@
 @use "../abstract" as abstract;
 .hero{
   height: auto;
+  
 
 
       &__sub {
@@ -12,6 +13,8 @@
 
     @media only screen and (max-width:1222px) {
       flex-direction: column;
+     
+
     }
      @media only screen and (max-width: 482px) {
                 margin-bottom: 5rem;
@@ -27,7 +30,8 @@
      
    flex-basis: 40%; 
   padding: 2rem;
-  margin-left: 5rem;
+  margin-right: -8rem;
+  margin-left: 6rem;
 
   
 
@@ -48,21 +52,26 @@
                    margin-left: 3rem;
                   
                }
+                @media only screen and (max-width: 375px) {
+               
+                   margin-left:0px;
+                  
+               }
 
 
   h4{
     width: 47rem;
-  font-family:' Poppins', sans-serif;
+  font-family:' Poppins';
   font-weight: 300;
-  font-size: 2.5rem;
-  line-height:3.2rem;
+  font-size: 1.60rem;
+  line-height:3rem;
   letter-spacing: 0%;
   color:var( --color-secondary-light);
   margin-bottom:0;
  
   @media only screen and (max-width: 1286px) {
   
-    
+     font-size: 1.60rem;
    flex-basis: 80%;
     padding: 1rem;
     margin-left: 0;
@@ -85,8 +94,10 @@
                }
                   @media only screen and (max-width: 392px) {
                 font-size: 1.80rem;
-                width: 34rem;
+                width: 30rem;
                  line-height: 2.5rem;
+                  margin-left:-20px;
+                 
                   
                   
                }
@@ -98,28 +109,31 @@
    &__note{
     flex:0 0 40%;
     text-transform:uppercase;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins";
   font-weight: 600;
   font-size: 3.5rem;
-  line-height: 60px;
+  line-height: 50px;
   letter-spacing: -5%;
-  width: 450px;
-  height: 218px;
+ max-width: 500px;
+  height:16rem;
+  
 
    @media only screen and (max-width: 1286px) {
-  
+    max-width:450px;
      flex-basis: 80%;
     padding:0;
     margin-left: 0;
+     font-size: 3.5rem;
+      
     
   }
 
     @media only screen and (max-width: 1222px) {
   
-   
+    overflow-x: hidden;
    flex-basis: 85%;
- font-size: 3.5rem;
- line-height: 60px;
+ font-size: 3rem;
+ 
 
  
   }
@@ -128,7 +142,7 @@
                    flex-basis: 35%;
                    line-height: 45px;
                    width: 320px;
-                   height: auto;
+                   
                }
 
   @media only screen and (max-width: 482px) {
@@ -136,7 +150,7 @@
                    flex-basis: 35%;
                    line-height: 40px;
                    width: 310px;
-                   height: auto;
+                   
                    
                   
                }
@@ -215,8 +229,8 @@
 
   display: flex;
     align-items: center;
-    margin-top:-3rem;
-    margin-left: 3rem;
+    margin-top:-2rem;
+    margin-left: 6rem;
     height: auto;
 
     @media only screen and (max-width:1222px) {

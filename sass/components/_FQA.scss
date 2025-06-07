@@ -10,7 +10,7 @@
              
         h1{
            
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Poppins';
         font-weight: 600;
         font-size: 4.60vw; 
         letter-spacing: -5%;
@@ -27,7 +27,7 @@
 
             }
               @media only screen and (max-width: 996px) {
-                               width: 200px;
+                               width: 265px;
                                 font-size: 5.5vw; 
                                 text-align: start;
                           
@@ -39,7 +39,7 @@
 
         p{
       
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Poppins';
         font-size: 1.8rem;
         line-height: 3.3rem;
         letter-spacing: 0%;
@@ -69,7 +69,7 @@
       button.btn {
         width: 15rem;
         height: 7rem;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Poppins';
         font-weight: 300;
         font-size: 18px;
         text-transform: capitalize;
@@ -123,17 +123,18 @@
                 
                  h4{
                     width: 20rem;
-                    font-family: 'Poppins', sans-serif;
+                    font-family: 'Poppins';
                      font-weight: 500;
                      font-size: 2.5rem;
                      line-height: 3rem;
                     letter-spacing: -2.5%;
                     padding-left: var( --pad-left);
-                    flex:0 0 65% ;
+                    flex:0 0 65.40% ;
                     
                         @media only screen and (max-width: 1286px) {
                             flex:0 0 68% ;
                      }
+                    
         
                    @media only screen and (max-width: 1222px) {
                          flex:0 0 78% ;
@@ -167,7 +168,7 @@
                p{
                    
                width: 47rem;
-              font-family: 'Poppins', sans-serif;
+              font-family: 'Poppins';
       font-weight: 300;
       font-size: 1.5rem;
       line-height: 2.5rem;
@@ -198,7 +199,7 @@
 
           h4{
           
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Poppins';
            font-weight: 500px;
           font-size: 20px;
           line-height: 40px;
@@ -248,7 +249,7 @@
           
 
           h4{
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Poppins';
             font-weight: 500px;
            font-size: 20px;
            line-height: 40px;
@@ -292,7 +293,7 @@
 
 
           h4{
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Poppins';
             font-weight: 500px;
            font-size: 20px;
            line-height: 40px;
@@ -311,7 +312,7 @@
            }
              @media only screen and (max-width: 496px) {
                                        padding-left: 1.80rem;
-                                          //  width:17rem;  
+                                            
                            
                                 }
           }
@@ -341,7 +342,7 @@
 
 
           h4{
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Poppins';
             font-weight: 500px;
            font-size: 20px;
            line-height: 40px;
